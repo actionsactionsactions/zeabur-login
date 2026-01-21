@@ -26,6 +26,7 @@ jobs:
 
       - name: Run Keep Alive
         env:
+          ZEABUR_MAGIC_LINK: ${{ secrets.ZEABUR_MAGIC_LINK }}
           ZEABUR_COOKIE: ${{ secrets.ZEABUR_COOKIE }}
           REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
